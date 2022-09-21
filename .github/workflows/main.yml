@@ -33,4 +33,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
+      - uses: actions/check-run
+        with:
+          run: ls -alh
          
