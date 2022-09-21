@@ -10,8 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-      projectPath:
-          - "/github/workspace/."
+        projectPath: ./
         targetPlatform:
          - StandaloneWindows64 # Build a Windows 64-bit standalone.
          
