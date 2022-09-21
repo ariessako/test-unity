@@ -19,6 +19,8 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+      - name: Print 
+        run: ls -alh
       - uses: actions/cache@v2
         with:
           path: Library
@@ -33,6 +35,5 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
-      - name: Print the input name to STDOUT
-        run: ls -alh
+      
          
